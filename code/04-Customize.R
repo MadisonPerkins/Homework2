@@ -35,6 +35,8 @@ tx <- qplot(long, lat, data = texas, geom = "polygon",
 tx
 # ------------------------------------------------------
 
+#Creating a data visual for the data on Texas
+
 # Title
 
 tx + ggtitle("Population of Texas Counties")
@@ -42,6 +44,9 @@ tx + ggtitle("Population of Texas Counties")
 tx
 tx2 <- tx + ggtitle("Population of Texas Counties")
 tx2
+
+
+#Note on how to make a title on a graph
 
 # Manipulating plots
 
@@ -100,6 +105,7 @@ r + scale_shape_manual(values = c(0, 15, 1, 16, 3))
 ?pch
 r + scale_shape_manual(values = c(0, 15, 1, 16, 3))
 
+#research qplot, never used this before
 
 tx + scale_fill_brewer(palette = "Greens")
 tx + scale_fill_manual(values = c("red", "orange", "yellow", "green", "blue"))
@@ -169,7 +175,7 @@ tx + scale_fill_grey(name = "Legend",
   labels = c("label 1", "label 2", "label 3","label 4", "label 5"))
 
 tx + scale_fill_discrete(name = "Legend name")
-
+#I like the way setting up a legend is coded on this document. Noting to use on future projects. 
 # Your Turn
 # ----------------------------------------
 tx + scale_fill_brewer(
